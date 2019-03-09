@@ -9,7 +9,7 @@ using Temel.Core.DataAccess.EntityFreamwork;
 
 namespace Temel.Nortwind.DAL.Concrete.EntityFreamwork
 {
-    class EfProductDAL: EfEntityRepositoryBase<Product,NortwindContext>,IProductDAL
+   public class EfProductDAL: EfEntityRepositoryBase<Product,NortwindContext>,IProductDAL
     {
 
     }

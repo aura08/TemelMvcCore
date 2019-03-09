@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Temel.Nortwind.MvcWebUI
+namespace Temel.Nortwind.MVCUI
 {
     public class Program
     {

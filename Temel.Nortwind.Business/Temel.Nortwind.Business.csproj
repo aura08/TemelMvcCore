@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Temel.Nortwind.DAL\Temel.Nortwind.DAL.csproj" />
+    <ProjectReference Include="..\Temel.Nortwind.Entities\Temel.Nortwind.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

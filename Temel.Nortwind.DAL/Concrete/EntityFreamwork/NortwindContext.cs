@@ -6,7 +6,7 @@ using Temel.Nortwind.Entities.Concrete;
 
 namespace Temel.Nortwind.DAL.Concrete.EntityFreamwork
 {
-    class NortwindContext : DbContext
+   public class NortwindContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

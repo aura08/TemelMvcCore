@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Core", "Temel.Core\Temel.Core.csproj", "{CBBB30A2-9342-481B-A472-2059DA82F6A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temel.Core", "Temel.Core\Temel.Core.csproj", "{CBBB30A2-9342-481B-A472-2059DA82F6A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Nortwind.Entities", "Temel.Nortwind.Entities\Temel.Nortwind.Entities.csproj", "{794679CD-D825-46DF-A02C-D6D457BB743A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temel.Nortwind.Entities", "Temel.Nortwind.Entities\Temel.Nortwind.Entities.csproj", "{794679CD-D825-46DF-A02C-D6D457BB743A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Nortwind.DAL", "Temel.Nortwind.DAL\Temel.Nortwind.DAL.csproj", "{5D4F5E45-E745-4418-954D-C290F56254DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temel.Nortwind.DAL", "Temel.Nortwind.DAL\Temel.Nortwind.DAL.csproj", "{5D4F5E45-E745-4418-954D-C290F56254DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Nortwind.Business", "Temel.Nortwind.Business\Temel.Nortwind.Business.csproj", "{AA95EE86-2AD8-4A25-B32D-95060F503E16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temel.Nortwind.Business", "Temel.Nortwind.Business\Temel.Nortwind.Business.csproj", "{AA95EE86-2AD8-4A25-B32D-95060F503E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Nortwind.MvcWebUI", "Temel.Nortwind.MvcWebUI\Temel.Nortwind.MvcWebUI.csproj", "{2796C3C7-BA1F-4E60-AF58-218D700C345F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temel.Nortwind.MVCUI", "Temel.Nortwind.MVCUI\Temel.Nortwind.MVCUI.csproj", "{EC1BA85D-13B9-4721-A075-1EE6C5A09851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{AA95EE86-2AD8-4A25-B32D-95060F503E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA95EE86-2AD8-4A25-B32D-95060F503E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA95EE86-2AD8-4A25-B32D-95060F503E16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2796C3C7-BA1F-4E60-AF58-218D700C345F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2796C3C7-BA1F-4E60-AF58-218D700C345F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2796C3C7-BA1F-4E60-AF58-218D700C345F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2796C3C7-BA1F-4E60-AF58-218D700C345F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1BA85D-13B9-4721-A075-1EE6C5A09851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1BA85D-13B9-4721-A075-1EE6C5A09851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1BA85D-13B9-4721-A075-1EE6C5A09851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1BA85D-13B9-4721-A075-1EE6C5A09851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
