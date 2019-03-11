@@ -1,11 +1,26 @@
 ﻿@model Temel.Nortwind.MVCUI.Models.ProductListViewModel
 @{
+    Layout = "~/Views/_Layout.cshtml";
     ViewData["Title"] = "Index";
 }
 
 
-<!DOCTYPE html>
-<head>
-</head>
-<h2>Index</h2>
-</html>
+
+    <div>
+        <table class="table table-responsive">
+            <tr>
+                <td>Prdocut Name</td>
+                <td>Unit Price</td>
+                <td>UnitinStock</td>
+
+            </tr>
+            @foreach(var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>@product.UnitPrice</td>
+                    <td>@product.UnitsInStock</td>
+                </tr>
+            }
+        </table>
+    </div>

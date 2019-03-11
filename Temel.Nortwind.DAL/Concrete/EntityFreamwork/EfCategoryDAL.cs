@@ -7,7 +7,7 @@ using Temel.Nortwind.Entities.Concrete;
 
 namespace Temel.Nortwind.DAL.Concrete.EntityFreamwork
 {
-    class EfCategoryDAL:EfEntityRepositoryBase<Category,NortwindContext>,ICategoryDAL
+   public class EfCategoryDAL:EfEntityRepositoryBase<Category,NortwindContext>,ICategoryDAL
     {
     }
 }

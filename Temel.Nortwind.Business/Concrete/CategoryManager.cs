@@ -7,7 +7,7 @@ using Temel.Nortwind.Entities.Concrete;
 
 namespace Temel.Nortwind.Business.Concrete
 {
-    class CategoryManager : ICategoryService
+   public class CategoryManager : ICategoryService
     {
         ICategoryDAL _categoryDal;
         public CategoryManager(ICategoryDAL categoryDAL)

@@ -10,6 +10,7 @@ using Temel.Nortwind.Business.Abstract;
 using Temel.Nortwind.Business.Concrete;
 using Temel.Nortwind.DAL.Abstract;
 using Temel.Nortwind.DAL.Concrete.EntityFreamwork;
+using Temel.Nortwind.MVCUI.Middleware;
 
 namespace Temel.Nortwind.MVCUI
 {
@@ -21,6 +22,8 @@ namespace Temel.Nortwind.MVCUI
         {
             services.AddScoped<IProductService,ProductManager>();
             services.AddScoped<IProductDAL,EfProductDAL>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDAL, EfCategoryDAL>();
             services.AddMvc();
         }
 
@@ -29,10 +32,12 @@ namespace Temel.Nortwind.MVCUI
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(); // middleware ,hata yönetimi için
             }
+            app.UseStaticFiles();//static file yönetimi için 
+            app.useNodeModules(env.ContentRootPath); 
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvcWithDefaultRoute();  //mvc routing için
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Temel.Nortwind.Entities.Concrete
     public class Category:IEntity
     {
         public int CategoryId { get; set; }
-        public string CatagoryName { get; set; }
+        public string CategoryName { get; set; }
 
     }
 }

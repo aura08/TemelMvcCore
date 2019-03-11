@@ -11,7 +11,7 @@ namespace Temel.Nortwind.Entities.Concrete
         public int CategoryId { get; set; }
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
-        public short UnitInStock { get; set; }
+        public short UnitsInStock { get; set; }
 
 
     }
