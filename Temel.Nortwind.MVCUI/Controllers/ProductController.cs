@@ -16,14 +16,22 @@ namespace Temel.Nortwind.MVCUI.Controllers
         {
             _productService = productService;
         }
-        public IActionResult Index()
-        {
-           var products= _productService.GetAll();
+        public IActionResult Index(int page = 1,int Category=0)
+        { int pageSize = 10;
+            var products = Category == 0 ? _productService.GetAll() : _productService.GetByCategory(Category);
             ProductListViewModel model = new ProductListViewModel
             {
-                Products = products
+
+                Products = products.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                PageCount = (int)Math.Ceiling(products.Count / (double)pageSize),
+                PageSize = pageSize,
+                CurrtentCategory = Category,
+                CurrentPage = page
             };
+
+
             return View(model);
         }
+        
     }
 }

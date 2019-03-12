@@ -24,6 +24,9 @@ namespace Temel.Nortwind.MVCUI
             services.AddScoped<IProductDAL,EfProductDAL>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDAL, EfCategoryDAL>();
+            services.AddSession();
+
+            services.AddDistributedMemoryCache();
             services.AddMvc();
         }
 
@@ -35,8 +38,8 @@ namespace Temel.Nortwind.MVCUI
                 app.UseDeveloperExceptionPage(); // middleware ,hata yönetimi için
             }
             app.UseStaticFiles();//static file yönetimi için 
-            app.useNodeModules(env.ContentRootPath); 
-
+            app.useNodeModules(env.ContentRootPath);
+            app.UseSession();
             app.UseMvcWithDefaultRoute();  //mvc routing için
         }
     }
