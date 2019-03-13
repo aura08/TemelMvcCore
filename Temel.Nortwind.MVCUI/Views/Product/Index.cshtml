@@ -1,4 +1,4 @@
-﻿
+﻿@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
 @{
     Layout = "~/Views/_Layout.cshtml";
     ViewData["Title"] = "Index";
@@ -20,11 +20,11 @@
                 <td>@product.ProductName</td>
                 <td>@product.UnitPrice</td>
                 <td>@product.UnitsInStock</td>
+                <td><a class="btn btn-xs btn-success"  href="/Cart/AddToCart?productId=@product.ProductId">Add to Cart</a></td>
             </tr>
         }
     </table>
 </div>
-<product-list-pager current-page="@Model.CurrentPage" current-category="@Model.CurrtentCategory" page-count="@Model.PageCount" page-size="@Model.PageSize" >
+<product-list-pager current-page="@Model.CurrentPage" current-category="@Model.CurrtentCategory" page-count="@Model.PageCount" page-size="@Model.PageSize">
 
 </product-list-pager>
-       

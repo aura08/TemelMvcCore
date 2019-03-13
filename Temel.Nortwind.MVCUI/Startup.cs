@@ -11,6 +11,7 @@ using Temel.Nortwind.Business.Concrete;
 using Temel.Nortwind.DAL.Abstract;
 using Temel.Nortwind.DAL.Concrete.EntityFreamwork;
 using Temel.Nortwind.MVCUI.Middleware;
+using Temel.Nortwind.MVCUI.Services;
 
 namespace Temel.Nortwind.MVCUI
 {
@@ -24,6 +25,11 @@ namespace Temel.Nortwind.MVCUI
             services.AddScoped<IProductDAL,EfProductDAL>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDAL, EfCategoryDAL>();
+            services.AddSingleton<ICartServiceSession, CartSessionService>();
+            services.AddSingleton<ICartService, CartService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+
             services.AddSession();
 
             services.AddDistributedMemoryCache();

@@ -12,5 +12,6 @@ namespace Temel.Nortwind.Business.Abstract
         void Add(Product product);
         void Delete(int ProductId);
         void Update(Product product);
+        Product GetById(int productId);
     }
 }

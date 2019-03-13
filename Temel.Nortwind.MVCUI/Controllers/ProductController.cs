@@ -32,6 +32,10 @@ namespace Temel.Nortwind.MVCUI.Controllers
 
             return View(model);
         }
+        //public IActionResult AddToCart()
+        //{
+
+        //}
         
     }
 }

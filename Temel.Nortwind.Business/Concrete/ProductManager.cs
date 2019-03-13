@@ -36,9 +36,17 @@ namespace Temel.Nortwind.Business.Concrete
             return _productDal.GetList(p =>p.CategoryId== CategoryId);
         }
 
+        public Product GetById(int productId)
+        {
+            Product product = new Product();
+            product = _productDal.Get(p => p.ProductId == productId);
+            return product;
+
+        }
+
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            _productDal.Update(product);
         }
     }
 }
